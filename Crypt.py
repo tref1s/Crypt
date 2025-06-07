@@ -1527,10 +1527,10 @@ def main():
         print("🌐 Приложение доступно по адресу: http://localhost:5000")
         print("📝 Для остановки нажмите Ctrl+C")
         print("="*60)
-        app.run(host='0.0.0.0', port=5000, debug=False)
+        app.run(host='127.0.0.1', port=5000, debug=False)
     except ImportError as e:
         print(f"❌ Ошибка: Не найдена библиотека: {e}")
-        print("💡 Установите зависимости: pip install flask cryptography")
+        print("💡 Установите зависимости по инстркции https://alexelsukov.ru/documentation/crypt")
     except Exception as e:
         print(f"❌ Ошибка запуска: {e}")
 
